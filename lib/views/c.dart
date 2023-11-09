@@ -32,7 +32,6 @@ class _HomePageState extends State<HomePage> {
     ),
   ];
 
-  // created method for getting user current location
   Future<Position> getUserCurrentLocation() async {
     await Geolocator.requestPermission()
         .then((value) {})
